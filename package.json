@@ -1,5 +1,5 @@
 {
-  "name": "widerFunnel",
+  "name": "A/B Tester",
   "version": "1.0.0",
   "description": "",
   "main": "back/index.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
