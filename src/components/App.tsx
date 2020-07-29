@@ -44,8 +44,6 @@ const App: React.FC = () => {
         <div className="container">
             {<div className="row crazyText">
                 <img src='https://fontmeme.com/permalink/200729/a47a1659269e3dac26d2ec665771c574.png'/>
-                {/*<h1 className={`text-center`}>A/B TESTING</h1>*/}
-                {/* {chosenTest !== ''  && <h2 className={`text-center`}>You've Chosen {chosenTest}</h2>}*/}
                 <h4 className={`text-center`}
                     style={
                         {
@@ -82,8 +80,7 @@ const App: React.FC = () => {
                                 if (resolve.status === 200) {
                                     setShowSuccess(resolve.data.message);
                                     setTimeout(function () {
-                                        window.location.reload(false);
-
+                                        window.location.reload(false);//sleep.
                                     },2200);
                                 }
                             });
