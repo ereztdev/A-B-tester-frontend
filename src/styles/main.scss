@@ -1,3 +1,90 @@
+$WF1: #f79120;
+$WF2: #00a5b8;
+$WF3: #005776;
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 body{
-  background: teal;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: $WF1;
+  background-image: linear-gradient(110deg, $WF1 11%, $WF3 53%, $WF2 83%);
+  background-repeat: no-repeat;
+
+}
+.test--wrapper{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  h1{
+    pointer-events: none;
+    transition: 300ms  ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17vw;
+    color: $WF1;
+    text-shadow: $WF3 0px 0px;
+  }
+    &:hover{
+    h1{
+      text-shadow: #000031 3px 3px;
+    }
+  }
+}
+.overlay_picked{
+  height: 100%!important;
+}
+.h1_A, .h1_B{
+  opacity: 1;
+  text-shadow: #000031 3px 3px;
+}
+.overlay{
+  position: absolute;
+  background: red;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  transition: 1s ease-in-out;
+}
+.scooped{
+  position: absolute;
+  background: red;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+}
+.crazyText {
+  font-family: 'Open Sans', cursive;
+}
+.sendTraffic{
+  font-size: 40px;
+}
+.fullscreenOverlay{
+  display: none;
+  z-index: 1;
+  background: url("https://i.pinimg.com/originals/a0/02/a3/a002a3e51a2adc85d6c0a4684892e743.gif");//rgba(0,0,0,0.8);
+  background-size: 100% 100% ;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  &::after{
+    color: black;
+    font-family: 'Open Sans', cursive;
+    font-weight: 800;
+    text-align: center;
+    content: "Please Wait 🤘";
+    white-space: pre;
+
+    text-shadow: ghostwhite 1px 1px 8px;
+    font-size: 12vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+
+  }
 }
