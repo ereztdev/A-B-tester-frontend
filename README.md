@@ -8,4 +8,4 @@
 - pull this repo (`git pull https://github.com/ereztdev/A-B-tester-frontend.git`)
 - change dir into the repo (`cd A-B-tester-frontend`)
 - install all packages (`npm install`)
-- run the frontend dev server (`npm start dev`)
+- run the frontend dev server (`npm run dev`)
